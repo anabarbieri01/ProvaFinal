@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Todo } from '../todo';
+
 
 @Component({
   selector: 'app-dados',
@@ -7,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class DadosComponent {
 
-  dados = "nome";
+  dados: Todo ;
 
   constructor() { }
 
