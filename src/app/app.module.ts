@@ -17,8 +17,7 @@ import { InMemoryDataService } from './in-memory-data.service';
     BrowserModule,
     HttpClientModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(
-  InMemoryDataService, { dataEncapsulation: false }
+
 )
 
   ],

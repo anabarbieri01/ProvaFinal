@@ -1,15 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CheckboxRequiredValidator } from '@angular/forms';
 import { Todo } from '../todo';
 
 
 @Component({
   selector: 'app-dados',
   templateUrl: './dados.component.html',
-  styleUrls: ['./dados.component.css']
+  styleUrls: ['./dados.component.css'],
 })
 export class DadosComponent {
 
-  dados: Todo ;
+  @Input() dados: Array<{ userId: number,id: number, title: string, completed:CheckboxRequiredValidator }> | null = null;
 
   constructor() { }
 
