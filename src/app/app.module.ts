@@ -4,8 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { DadosComponent } from './dados/dados.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './in-memory-data.service';
+
 
 
 @NgModule({
@@ -15,11 +14,7 @@ import { InMemoryDataService } from './in-memory-data.service';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
-    HttpClientModule,
-
-)
-
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
