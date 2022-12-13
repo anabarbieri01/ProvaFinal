@@ -4,13 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { DadosComponent } from './dados/dados.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TabelaComponent } from './tabela/tabela.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DadosComponent
+    DadosComponent,
+    TabelaComponent
   ],
   imports: [
     BrowserModule,
